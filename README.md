@@ -22,8 +22,9 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Installation
-![image](https://github.com/rashedsadat/CodingTest/assets/68508040/ea3955b5-9633-4646-babc-d050b6162fcc)
+First download the project and then run below command
 
+composer update
 
 ## Laravel Sponsors
 
