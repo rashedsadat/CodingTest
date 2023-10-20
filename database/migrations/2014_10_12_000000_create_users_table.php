@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+use function Laravel\Prompts\table;
+
 return new class extends Migration
 {
     /**
@@ -13,9 +15,10 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('name', 40)->nullable();
+            $table->string('email', 40)->unique();
+            $table->enum('account_type', ['individual', 'business'])->default('individual');
+            $table->double('balance')->nullable()->default(0.00000000);
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
