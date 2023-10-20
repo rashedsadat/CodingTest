@@ -24,7 +24,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 ## Installation
 First download the project and then run below command
 
-composer update
+## composer update
 
 ## Laravel Sponsors
 
